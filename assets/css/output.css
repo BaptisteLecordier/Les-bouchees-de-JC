@@ -552,13 +552,12 @@ body {
 
 .social-links-nav {
 
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column-reverse;
   height: 5vh;
   width: 25vw;
   box-sizing: border-box;
-  position: fixed;
   top: 95vh;
   left: 75vw;
 
