@@ -393,8 +393,13 @@ body * {
 
 
 
-h2,h3,h4 {
+h2 {
   font-size: 40px;
+  font-weight: bold;
+}
+
+h3,h4 {
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -505,12 +510,7 @@ img {
 
 
 
-body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
+
 
     .container {
       display: flex;
@@ -622,4 +622,43 @@ footer a,h5 {
   font-family: "questa-grande", serif;
   font-size: 20px;
   font-weight: 200;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        
+      }
+
+
+main {
+  min-height: 100vh;
+  background-color: #151713;
+  color: #F1EEE8;
+}
+
+.page {
+  padding: 150px 7vw 100px 7vw;
+  box-sizing: border-box;
+
+
+}
+
+.page h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.page h2 {
+  padding: 70px 0 20px 0;
+}
+
+.page h3 {
+  padding: 20px 0 10px 0;
+}
+
+.page p {
+  padding: 2px 0px;
 }
