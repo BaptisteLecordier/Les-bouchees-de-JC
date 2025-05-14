@@ -649,6 +649,7 @@ main {
 .page h1 {
   font-size: 70px;
   font-weight: 600;
+  padding: 0px 0 20px 0;
 }
 
 .page h2 {
@@ -661,4 +662,13 @@ main {
 
 .page p {
   padding: 2px 0px;
+}
+
+.page .buttons-group {
+  padding: 20px 0px;
+}
+
+
+.page img {
+  padding: 20px 0px;
 }
