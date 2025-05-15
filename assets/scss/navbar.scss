@@ -1,0 +1,26 @@
+.nav {
+    height: 7vw;
+    width: 100%;
+    padding: 20px $marginSite;
+    box-sizing: border-box;
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 100;
+
+    &-list {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        & > * {
+            height: 100%;
+            width: 33.333%;
+            display: flex;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            } 
+        }
+    }
+}

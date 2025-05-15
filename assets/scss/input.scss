@@ -1,0 +1,258 @@
+
+@import 'variables.scss';
+
+@import 'navbar.scss';
+
+@import 'button.scss';
+
+@import 'footer.scss';
+
+@import 'body.scss';
+
+@import 'menu.scss';
+
+@import 'main.scss';
+
+@import 'menu-overlay.scss';
+
+@import 'social-links-nav.scss';
+
+@import 'page.scss';
+
+.logo-el {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.333%;
+
+    & > a {
+        max-width: 100%;
+        max-height: 100%;
+
+        & > img {
+            border: $second solid 1px;
+            max-width: 100px;
+            max-height: 100px;
+            box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
+            border-radius: 100px;
+            transition: box-shadow 0.3s ease;
+        }
+    }
+}
+
+.home-1 {
+    height: 100vh;
+    width: 100vw;
+
+    &-1 {
+        height: 90%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+
+        & > * {
+            position: relative;
+            top: 75px;
+            padding: 0px $marginSite;
+        }
+
+        &-2 {
+            height: 10%;
+            width: 100%;
+        }
+    }
+}
+
+.call-to-action-1 > h1 {
+    font-size: 75px;
+    margin: 0px 0px 20px 0px;
+    color: $second;
+    font-weight: 600;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 50px;
+    }
+}
+
+.buttons-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.module-bi {
+    background-color: $dark;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.follow-me {
+    position: relative;
+    transition: transform 0.1s linear;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    will-change: background-position;
+
+    @media screen and (max-width: 1000px) {
+        background-size:auto;
+    }
+}
+
+.isOpen {
+    height: 100vh;
+}
+
+.module-bi {
+    color: $second;
+    padding: 100px $marginSite;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: $marginSite;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
+
+    & > * {
+        min-height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3,h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.logo-m {
+    width: 150px;
+    border: solid $second 1px;
+    border-radius: 100px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.module-grid-square-4 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.module-grid-square-4 > * {
+    height: 45%;
+    width: 45%;
+    gap: 0px;
+    overflow: hidden;
+}
+
+.home-3 {
+    background-image: url(../img/slate_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.drop-shadow {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.center-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+        text-align: center;
+    }
+}
+
+.home-4 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: $dark;
+    padding: 50px $marginSite;
+    box-sizing: border-box;
+    color: $second;
+
+    & > h4 {
+        text-align: center;
+        padding: 0px 0px 50px 0px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    flex: 1 1 480px; /* permet de grandir et rétrécir entre 520px et 540px */
+    max-width: 510px;
+    min-width: 480px;
+    height: 220px;
+    background-color: $second;
+    color: $dark;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 10px;
+
+    @media screen and (max-width: 500px) {
+        min-width: 0px;
+        min-height: none;
+        padding: 20px 20px;
+        justify-content:center;
+    }
+}
+
+.stars-container {
+    display: flex;
+    gap: 5px;
+    padding: 0 0 20px 0;
+}
+
+em {
+    font-style: italic;
+}

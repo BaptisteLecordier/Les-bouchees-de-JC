@@ -1,0 +1,49 @@
+.menu-toggle {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .bar {
+            background-color: $main;
+    }
+}
+
+.bar {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: $second;
+    border-radius: 2px;
+    transition: transform 0.4s ease, opacity 0.3s ease, background-color 0.3s ease;
+    transform-origin: center center;
+
+    &:nth-child(1) {
+        transform: translateY(-11px) rotate(0deg);
+    }
+
+    &:nth-child(2) {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    &:nth-child(3) {
+        transform: translateY(11px) rotate(0deg);
+    }
+}
+
+.menu-toggle.active {
+    & .bar:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    & .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    & .bar:nth-child(3) {
+        transform: translateY(0px) rotate(-45deg);
+    }
+}

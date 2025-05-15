@@ -1,0 +1,16 @@
+{
+  "name": "package-for-sass",
+  "version": "1.0.0",
+  "description": "allow to use scss with sass",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass assets/scss/input.scss assets/css/output.css --watch"
+    },
+  "author": "Baptiste Lecordier",
+  "license": "ISC",
+  "type": "module",
+  "keywords": [],
+  "devDependencies": {
+    "sass": "^1.88.0"
+  }
+}

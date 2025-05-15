@@ -1,0 +1,23 @@
+.social-links-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25vw;
+    box-sizing: border-box;
+    top: 90vh;
+    left: 75vw;
+    color: #F1EEE8;
+    padding: 0px $marginSite;
+
+    & > * {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+
+        & > * {
+            height: 30px;
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.page {
+    padding: 150px $marginSite 100px $marginSite;
+    box-sizing: border-box;
+
+    & h1 {
+        font-size: 70px;
+        font-weight: 600;
+        padding: 0px 0 20px 0;
+    }
+
+    & h2 {
+        padding: 70px 0 20px 0;
+    }
+
+    & h3 {
+        padding: 20px 0 10px 0;
+    }
+
+    & p {
+        padding: 2px 0px;
+    }
+
+    & .buttons-group {
+        padding: 20px 0px;
+    }
+
+    & img {
+        padding: 20px 0px;
+    }
+}

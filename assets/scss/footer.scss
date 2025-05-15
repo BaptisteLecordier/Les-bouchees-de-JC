@@ -1,0 +1,35 @@
+footer {
+    background-color: #F1EEE8;
+    color: #151713;
+    width: 100vw;
+    min-height: 400px;
+    padding: 50px $marginSite;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    
+    @media screen and (max-width: 1000px) {
+            flex-direction: column;
+    }
+    
+    & > * {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 15px;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+
+        & a,h5 {
+            color: #151713;
+            text-decoration: none;
+            font-family: "questa-grande", serif;
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+}

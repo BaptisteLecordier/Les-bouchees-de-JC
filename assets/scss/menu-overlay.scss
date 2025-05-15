@@ -1,0 +1,54 @@
+.menu-overlay {
+    background-color: $dark;
+    height: 0vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: height 0.15s;
+    position: fixed;
+    z-index: 50;
+    box-shadow: rgba(0,0,0,0.1) 0px 100px 10px ;
+
+    & > ul {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        & > .is-visible {
+            transition: transform 0.25s ease, opacity 0.5s ease;
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+        & > :not(.is-visible) {
+            transition: transform 0s ease, opacity 0s ease;
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+
+        & > li {
+            margin: 10px 0px;
+            animation: transform 0.5s;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: $second;
+        font-size: 80px;
+        transition: color 0.2s ease;
+        
+        @media screen and (max-width: 1000px) {
+            font-size: 40px;
+        }
+
+        &:hover {
+            color: $main;
+        }
+    }
+}
