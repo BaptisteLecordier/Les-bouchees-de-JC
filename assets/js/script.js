@@ -10,8 +10,6 @@
     requestAnimationFrame(updateParallax);
   })();
 
-
-
 const scrolled = window.scrollY;
         const parallax = document.querySelector('.parallax');
         parallax.style.backgroundPositionY = (scrolled * 0.5) - 100 + 'px';
@@ -20,11 +18,6 @@ const scrolled = window.scrollY;
         const parallax = document.querySelector('.parallax');
         parallax.style.backgroundPositionY = (scrolled * 0.5) - 100 + 'px';
     });
-
-
-
-
-
 
 const baseDelay = 150;
     const duration = 1000;
@@ -37,32 +30,32 @@ const baseDelay = 150;
         const reverseIndex = total - 1 - i;
         child.style.transitionDelay = `${reverseIndex * baseDelay}ms`;
         child.style.transitionDuration = `${duration}ms`;
-      });
     });
+});
 
-    function checkVisibility() {
-      const viewportHeight = window.innerHeight;
-      const viewportCenter = viewportHeight / 2;
+function checkVisibility() {
+  const viewportHeight = window.innerHeight;
+  const viewportCenter = viewportHeight / 2;
 
-      document.querySelectorAll('.anim').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const elCenter = rect.top + rect.height / 2;
+  document.querySelectorAll('.anim').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const elCenter = rect.top + rect.height / 2;
 
-        const isCenterNearViewportCenter = Math.abs(elCenter - viewportCenter) <= 600;
-        const isElementVisible = rect.bottom > 0 && rect.top < viewportHeight;
+    const isCenterNearViewportCenter = Math.abs(elCenter - viewportCenter) <= 600;
+    const isElementVisible = rect.bottom > 0 && rect.top < viewportHeight;
 
-        if (isCenterNearViewportCenter && isElementVisible) {
-          el.classList.add('visible');
-        } else if (!isElementVisible) {
-          el.classList.remove('visible');
-        }
-        // Sinon, on ne change rien (l'élément reste visible si déjà déclenché)
-      });
+    if (isCenterNearViewportCenter && isElementVisible) {
+      el.classList.add('visible');
+    } else if (!isElementVisible) {
+      el.classList.remove('visible');
     }
+    // Sinon, on ne change rien (l'élément reste visible si déjà déclenché)
+  });
+}
 
-    window.addEventListener('scroll', checkVisibility);
-    window.addEventListener('resize', checkVisibility);
-    window.addEventListener('load', checkVisibility);
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('resize', checkVisibility);
+window.addEventListener('load', checkVisibility);
 
 
 

@@ -2,21 +2,13 @@
 @import 'variables.scss';
 
 @import 'navbar.scss';
-
 @import 'button.scss';
-
 @import 'footer.scss';
-
 @import 'body.scss';
-
 @import 'menu.scss';
-
 @import 'main.scss';
-
 @import 'menu-overlay.scss';
-
 @import 'social-links-nav.scss';
-
 @import 'page.scss';
 
 .logo-el {
@@ -43,13 +35,19 @@
 .home-1 {
     height: 100vh;
     width: 100vw;
-
+    
     &-1 {
+        
         height: 90%;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        & h1 {
+            text-align: start;
+            padding: 0 0 20px 0;
+        }
 
         @media screen and (max-width: 1000px) {
             width: 100%;
@@ -68,16 +66,7 @@
     }
 }
 
-.call-to-action-1 > h1 {
-    font-size: 75px;
-    margin: 0px 0px 20px 0px;
-    color: $second;
-    font-weight: 600;
 
-    @media screen and (max-width: 1000px) {
-        font-size: 50px;
-    }
-}
 
 .buttons-group {
     display: flex;
@@ -139,17 +128,33 @@
 h2 {
     font-size: 40px;
     font-weight: bold;
+    padding: 10px 0 10px 0;
 }
 
 h3,h4 {
     font-size: 30px;
     font-weight: bold;
+    padding: 10px 0 10px 0;
 }
 
 p {
     font-size: 20px;
     font-weight: 200;
+    padding: 2px 0px;
 }
+
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+
+    font-weight: 600;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 50px;
+    }
+}
+
 
 .logo-m {
     width: 150px;
@@ -256,3 +261,8 @@ img {
 em {
     font-style: italic;
 }
+
+.buttons-group {
+    padding: 20px 0px;
+}
+
