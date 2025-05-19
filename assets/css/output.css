@@ -304,6 +304,14 @@ main {
   padding: 150px 7vw 100px 7vw;
 }
 
+html {
+  color-scheme: light;
+}
+
+:root {
+  color-scheme: only light;
+}
+
 .logo-el {
   align-items: center;
   flex-direction: column;
@@ -360,7 +368,6 @@ main {
 }
 
 .module-bi {
-  background-color: #151713;
   min-height: 100vh;
   width: 100%;
 }
@@ -389,7 +396,6 @@ main {
 }
 
 .module-bi {
-  color: #F1EEE8;
   padding: 100px 7vw;
   display: flex;
   flex-direction: row;
@@ -455,17 +461,13 @@ img {
 .module-grid-square-4 {
   width: 100%;
   aspect-ratio: 1/1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes de taille égale */
+  grid-template-rows: 1fr 1fr; /* 2 lignes de taille égale */
+  gap: 30px;
 }
 
 .module-grid-square-4 > * {
-  height: 45%;
-  width: 45%;
-  gap: 0px;
   overflow: hidden;
 }
 
@@ -491,10 +493,8 @@ img {
 .home-4 {
   min-height: 100vh;
   width: 100vw;
-  background-color: #151713;
   padding: 50px 7vw;
   box-sizing: border-box;
-  color: #F1EEE8;
 }
 .home-4 > h4 {
   text-align: center;
