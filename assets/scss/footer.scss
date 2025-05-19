@@ -1,35 +1,36 @@
 footer {
-    background-color: #F1EEE8;
-    color: #151713;
-    width: 100vw;
-    min-height: 400px;
-    padding: 50px $marginSite;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
-    
-    @media screen and (max-width: 1000px) {
-            flex-direction: column;
-    }
-    
-    & > * {
-        width: 25%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 15px;
+    min-height: 400px;
+    padding: 50px $marginSite;
+    width: 100vw;
 
-        @media screen and (max-width: 1000px) {
+    background-color: #F1EEE8;
+    color: #151713;
+
+    @media screen and (max-width: $breakpoint) {
+        flex-direction: column;
+    }
+
+    & > * {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        height: 100%;
+        width: 25%;
+
+        @media screen and (max-width: $breakpoint) {
             width: 100%;
         }
 
-        & a,h5 {
+        & a,
+        h5 {
             color: #151713;
-            text-decoration: none;
-            font-family: "questa-grande", serif;
             font-size: 20px;
             font-weight: 200;
+            text-decoration: none;
         }
     }
 }

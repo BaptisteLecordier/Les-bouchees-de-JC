@@ -1,15 +1,16 @@
 
-@import 'variables.scss';
+@import './variables.scss';
 
-@import 'navbar.scss';
-@import 'button.scss';
-@import 'footer.scss';
-@import 'body.scss';
-@import 'menu.scss';
-@import 'main.scss';
-@import 'menu-overlay.scss';
-@import 'social-links-nav.scss';
-@import 'page.scss';
+@import './body.scss';
+@import './navbar.scss';
+@import './button.scss';
+@import './footer.scss';
+
+@import './menu.scss';
+@import './main.scss';
+@import './menu-overlay.scss';
+@import './social-links-nav.scss';
+@import './page.scss';
 
 .logo-el {
     align-items: center;
@@ -37,7 +38,6 @@
     width: 100vw;
     
     &-1 {
-        
         height: 90%;
         width: 50%;
         display: flex;
@@ -49,7 +49,7 @@
             padding: 0 0 20px 0;
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: $breakpoint) {
             width: 100%;
         }
 
@@ -93,7 +93,7 @@
     background-repeat: no-repeat;
     will-change: background-position;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $breakpoint) {
         background-size:auto;
     }
 }
@@ -110,7 +110,7 @@
     box-sizing: border-box;
     gap: $marginSite;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $breakpoint) {
         flex-direction: column;
     }
 
@@ -145,12 +145,10 @@ p {
 
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
 
-    font-weight: 600;
-
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $breakpoint) {
         font-size: 50px;
     }
 }
