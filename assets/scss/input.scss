@@ -123,24 +123,6 @@
     }
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-    padding: 10px 0 10px 0;
-}
-
-h3,h4 {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 10px 0 10px 0;
-}
-
-p {
-    font-size: 20px;
-    font-weight: 200;
-    padding: 2px 0px;
-}
-
 h1 {
     font-size: 60px;
     font-weight: 600;
@@ -148,6 +130,26 @@ h1 {
     @media screen and (max-width: $breakpoint) {
         font-size: 50px;
     }
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 30px 0 10px 0;
+}
+
+h3,h4 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 0 5px 0;
+}
+
+
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 2px 0px 2px 0px;
 }
 
 .logo-m {
@@ -205,7 +207,6 @@ img {
 
     & > h4 {
         text-align: center;
-        padding: 0px 0px 50px 0px;
     }
 }
 
