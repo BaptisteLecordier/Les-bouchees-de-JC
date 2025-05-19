@@ -12,14 +12,6 @@
 @import './social-links-nav.scss';
 @import './page.scss';
 
-html {
-  color-scheme: light;
-}
-
-:root {
-  color-scheme: only light;
-}
-
 .logo-el {
     align-items: center;
     flex-direction: column;

@@ -187,6 +187,9 @@ footer > * h5 {
   width: 50px;
   height: 50px;
   align-items: center;
+  padding: 5px;
+  background-color: #151713;
+  border-radius: 100px;
 }
 .menu-toggle:hover .bar {
   background-color: #8B2013;
@@ -302,14 +305,6 @@ main {
 .page {
   box-sizing: border-box;
   padding: 150px 7vw 100px 7vw;
-}
-
-html {
-  color-scheme: light;
-}
-
-:root {
-  color-scheme: only light;
 }
 
 .logo-el {
